@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "qurban-api",
+    "builds": [{
+        "src": "app.js",
+        "use": "@vercel/node"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/app.js"
+    }]
+}   
